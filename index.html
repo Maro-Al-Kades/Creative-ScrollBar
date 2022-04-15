@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative ScrollBar</title>
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/03/29/63/00/240_F_329630036_TDLUtPMAtuPbTQoimy69TAHxopCwX18r.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <section>
+        <h1>Maro Al-Kades</h1>
+        <h2>Creative ScrollBar</h2>
+        <br>
+        <h3>scroll Down To Show Effects</h3>
+        <p>React had several notable releases this past year that included, lifecycle methods, context API, suspense, and React hooks.
+            Microsoft buys Github. Yeah, that happened.
+            Fonts created by CSS became a thing.
+            What I used to call front-end driven apps, gets labeled "serverless". Unfortunately, this term is overloaded. However, the term JAMstack does seem to be resonating with developers.
+            Google offered some neat tools this year to help make webpages load faster, i.e. squoosh and quicklink.
+            Vue gets more Github stars than React this year. But React remains dominant in terms of use.
+            A solution similar to React, without a virtual DOM or JSX, is introduced RE:DOM.
+            Alternatives to NW.js and Electron show up, DeskGap and Neutralino.js.
+            In 2017 the great divide between a front-end HTML & CSS developer v.s. front-end application developer is realized/verbalized. In 2018 that divide has grown wider and deeper and more people start to feel the divide.
+            This year, like most recent years, was stock full of app/framework solutions trying to contend with the mainstream JavaScript app tools (i.e. React, Angular, and Vue etc...) Let me list them for you. Radi.js, DisplayJS, Stimulus, Omi, Quasar.
+            JavaScript frameworks start offering their own languages that compile to JavaScript (e.g. Mint).
+            CodeSandbox evolves to become the dominant solution for online code sharing.
+            CSS Grid and CSS Flexbox are fully supported in modern browsers and get taken for some serious rides. But many are left wondering when to use which one and how.
+            Many realize the long terms costs of bolted on type systems (e.g. TypeScript and Flow). Some concluded bolted on systems are not unlike bolted on module systems (i.e. AMD/Require.js) and come with more issues than solutions. Minimally, many developers realize that if types are needed in large code bases, that bolted on systems are not ideal in comparison to languages that have them baked in (e.g. Reason, Purescript, Elm).
+            CSS Variables gain browser support among modern web browsers
+            The flavors of CSS in JS exploded and some question the practice.
+            ES modules are now usable in modern browsers and dynamic imports are close behind. We are even seeing a shift in tooling around this fact.
+            Many realize that end to end testing is the starting point of doing tests correctly in large part due to Cypress (i.e. Cypress first, then Jest).
+            While Webpack was heavily used again this year, many developers found Parcel to be easier to get up and running.
+            One of the most important questions asked this year was, what is the cost of JavaScript.
+            Babel 7 was released this year. That's a big deal because the last major release was almost three years ago.
+            The reality of too much JavaScript change too fast is realized and people start talking about what you need to know before you can even learn something like React. The fight is real.
+            Most developers found GraphQL, via Apollo, and see it as the next evolution for data API's.
+            Gulp and friends definitely took a back seat to NPM/Yarn run. But this did not stop Microsoft from getting in the game with Just.
+            This year, one can not only lint/hint HTML, CSS, and JavaScript they can lint/hint the web itself.
+            The 2018 Front-End Tooling survey is worth reading if only to realize just how much jQuery is still used.
+            It can't be denied TypeScript gained a lot of users this year.
+            VScode, dominates as the code editor of choice.
+            0.2 — In 2019, Expect...
+            Hopefully, more of this to come. "Stepping away from Sass".
+            Still a good idea to keep an eye on and learn about the up coming additions (and potential additions) to CSS via https://cssdb.org
+            The WebP image format from Google could reach support from all modern browsers this year.
+            Prepack will continue to cook.
+            GraphQL will continue to gain massive adoption.
+            The, "State of JavaScript" survey authors will add a "State of CSS" survey in 2019.
+            Keep an eye on Web Animations API.
+            Someone you know will try and convince you to use TypeScript.
+            Babel will get some competition from swc-project.
+            The case for, JAMStack's will continue.
+            Chasing the one code base to many platforms will continue.
+            More developers will turn to languages like ReasonML over JavaScript/TypeScript for large code bases.
+            More, largely used projects will start to shed jQuery in favor of native DOM solutions.
+            Web Components! At this point, I have no idea how Web Components will play out. Reality is they are not going away, and they have not gained a lot of momentum/usage once the hype ended.
+            Chapter 1. What Is a Front-end Developer?
+            This chapter provides a baseline explanation for front-end development and the front-end developer discipline.
+            
+            Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly. The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.
+            
+            The objective of designing a site is to ensure that when the users open up the site they see the information in a format that is easy to read and relevant. This is further complicated by the fact that users now use a large variety of devices with varying screen sizes and resolutions thus forcing the designer to take into consideration these aspects when designing the site. They need to ensure that their site comes up correctly in different browsers (cross-browser), different operating systems (cross-platform) and different devices (cross-device), which requires careful planning on the side of the developer.
+            
+            https://en.wikipedia.org/wiki/Front-end_web_development
+            
+            
+            Image source: https://www.upwork.com/hiring/development/front-end-developer/
+            
+            A Front-end Developer...
+            A front-end developer architects and develops websites and web applications using web technologies (i.e., HTML, CSS, and JavaScript), which typically runs on the Open Web Platform or acts as compilation input for non-web platform environments (i.e., React Native).
+            
+            A person enters into the field of front-end development by learning to build a website or web application which relies on HTML, CSS, and JavaScript and commonly runs in a web browser but can also run in a headless browser, WebView, or as compilation input for a native runtime environment. These four run times scenarios are explained below.
+            
+            Web Browsers (most common)
+            
+            A web browser is software used to retrieve, present, and traverse information on the WWW. Typically, browsers run on a desktop or laptop computer, tablet, or phone, but as of late a browser can be found on just about anything (i.e, on a fridge, in cars, etc.).
+            
+            The most common web browsers are (shown in order of most used first):
+            
+            Chrome
+            Safari
+            Internet Explorer (Note: not Edge, referring to IE 9 to IE 11)
+            Firefox
+            Edge
+            Headless Browsers
+            
+            Headless browsers are a web browser without a graphical user interface that can be controlled from a command line interface programmatically for the purpose of web page automation (e.g., functional testing, scraping, unit testing, etc.). Think of headless browsers as a browser that you can run programmatically from the command line that can retrieve and traverse web page code.
+            
+            The most common headless browsers are:
+            
+            Headless Chromium
+            Zombie
+            slimerjs
+            puppeteer
+            Webviews
+            
+            Webviews are used by a native OS, in a native application, to run web pages. Think of a webview like an iframe or a single tab from a web browser that is embedded in a native application running on a device (e.g., iOS, android, windows).
+            
+            The most common solutions for webview development are:
+            
+            Cordova (typically for native phone/tablet apps)
+            NW.js (typically used for desktop apps)
+            Electron (typically used for desktop apps)
+            Native from Web Tech
+            
+            Eventually, what is learned from web browser development can be used by front-end developers to craft code for environments that are not fueled by a browser engine (i.e. web platform). As of late, development environments are being dreamed up that use web technologies (e.g., CSS and JavaScript), without web engines, to create native applications.
+            
+            Some examples of these environments are:
+            
+            Flutter
+            React Native
+            NativeScript
+            Notes:
+            
+            Make sure you are clear what exactly is meant by the "web platform". Read the, "Open Web Platform" Wikipedia page. Explore the many technologies that make up the web platform.
+            Chapter 2. The Practice of Front-end Development: Overview
+            This chapter will break down and broadly describes the practice of front-end engineering starting with, "How Front-End Developers Are Made".
+            
+            2.1 - How Front-End Developers Are Made
+            How exactly does one become a front-end developer? Well, it's complicated. Just consider this road map:
+            
+            
+            
+            Image source: https://github.com/kamranahmedse/developer-roadmap
+            
+            Today, in general, one can't go to college and expect to graduate with a degree in front-end engineering. And, I rarely hear of or meet front-end developers who suffered through what is likely a deprecated computer science degree or graphic design degree to end up writing HTML, CSS, and JavaScript professionally. From my perspective, most of the people working on the front-end today generally seem to be self-taught from the ground up or cross over into the front-end space from design or computer science fields.
+            
+            If you were to set out today to become a front-end developer I would loosely strive to follow the process outlined below (Chapter 3 and Chapter 4 will dive into more details on learning resources).
+            
+            Learn, roughly, how the web platform works. Make sure you know the "what" and "where" of HTML, CSS, DOM, JavaScript, Domains, DNS, URLs, HTTP, browsers, and servers/hosting. Don't dive deep on anything just yet, just aim to understand the parts at play and how they loosely fit together. Start by building simple web pages.
+            Learn HTML
+            Learn CSS
+            Learn JavaScript
+            Learn DOM
+            Learn the fundamentals of user interface design (i.e. UI patterns, interaction design, user experience design, and usability).
+            Learn CLI/command line
+            Learn the practice of software engineering (i.e., Application design/architecture, templates, Git, testing, monitoring, automating, code quality, development methodologies).
+            Get opinionated and customize your tool box with whatever makes sense to your brain (e.g. Webpack, React, and Mobx).
+            Learn Node.js
+            A short word of advice on learning. Learn the actual underlying technologies, before learning abstractions. Don't learn jQuery, learn the DOM. Don't learn SASS, learn CSS. Don't learn JSX, learn HTML. Don't learn TypeScript, learn JavaScript. Don't learn Handlebars, learn JavaScript ES6 templates. Don't just use Bootstrap, learn UI patterns.
+            
+            Lately a lot of non-accredited, expensive, front-end code schools/bootcamps have emerged. These avenues of becoming a front-end developer are typically teacher directed courses, that follow a more traditional style of learning, from an official instructor (i.e., syllabus, test, quizzes, projects, team projects, grades, etc.).
+            
+            Keep in mind, if you are considering an expensive training program, this is the web! Everything you need to learn is on the web for the taking, costing little to nothing. However, if you need someone to tell you how to take and learn what is low cost to free, and hold you accountable for learning it, you should consider a traditional instructor lead class room setting. Otherwise, I am not aware of any other profession that is practically free for the taking with an internet connection, a couple of dollars a month for screencasting memberships, and a burning desire for knowledge.
+            
+            For example, if you want to get going today, consuming one or more of the following self-directed resources below can work:
+            
+            Getting started with the Web [read]
+            So, You Want to be a Front-End Engineer [watch]
+            Frontend Masters Learning Paths [watch][$]
+            Introduction to Web Development [watch][$]
+            Treehouse Techdegree [watch][$]
+            Front-End Web Developer Nanodegree [watch][$]
+            Become a Front-End Web Developer [watch][$]
+            freeCodeCamp [interactive][watch]
+            When getting your start, you should fear most things that conceal complexity. Abstractions (e.g. jQuery) in the wrong hands can give the appearance of advanced skills, while all the time hiding the fact that a developer has an inferior understanding of the basics or underlying concepts.
+            
+            It is assumed that on this journey you are not only learning, but also doing as you learn and investigate tools. Some suggest only doing to learn. While others suggest only learning about doing. I suggest you find a mix of both that matches how your brain works and do that. But, for sure, it is a mix! So, don't just read about it, do it. Learn, do. Learn, do. Repeat indefinitely because things change fast. This is why learning the fundamentals, and not abstractions, are so important.
+            
+            2.2 - Front-End Job Titles
+            A great divide has been brewing in the front-end developer space for several years between two very different types of so-called front-end developers. On the one side, you have JavaScript-focused programmers who write JavaScript for front-end runtimes that likely have computer science skills with a software development history. They more than likely view HTML and CSS as an abstraction (i.e. JSX and CSS in JS). On the other side, you have, most likely, non-computer science educated developers who focus on HTML, CSS, and JavaScript as it specifically pertains to the UI. In 2019, when entering or trying to understand the front-end developer space you will absolutely feel this divide. The term front-end developer is on the verge of meaninglessness without clarifying words to address what type of front-end developer is being discussed.
+            
+            Below is a list and description of various front-end job titles (Keep in mind titles are hard). The common, or most used (i.e., generic), title for a front-end developer is, "front-end developer" or "front-end engineer". Note that any job that contains the word "front-end", "client-side", "web UI", "HTML", "CSS", or "JavaScript" typically infers that a person has some degree of HTML, CSS, DOM, and JavaScript professional know how.
+            
+            Front-End Developer: The generic job title that describes a developer who is skilled to some degree at HTML, CSS, DOM, and JavaScript and implementing these technologies on the web platform.
+            
+            Front-End Engineer (aka JavaScript Developer or Full-stack JavaScript Developer): The job title given to a developer who comes from a computer science, engineering, background and is using these skills to work with front-end technologies. This role typically requires computer science knowledge and years of software development experience. When the word "JavaScript Application" is included in the job title, this will denote that the developer should be an advanced JavaScript developer possessing advanced programming, software development, and application development skills (i.e has years of experience building front-end software applications).
+            
+            CSS/HTML Developer: The front-end job title that describes a developer who is skilled at HTML and CSS, excluding JavaScript and application, know how.
+            
+            Front-End Web Designer: When the word "Designer" is included in the job title, this will denote that the designer will possess front-end skills (i.e., HTML & CSS) but also professional design (Visual Design and Interaction Design) skills.
+            
+            UI (User Interface) Developer/Engineer: When the word "Interface" or "UI" is included in the job title, this will denote that the developer should posses interaction design skills in addition to front-end developer skills or front-end engineering skills.
+            
+            Mobile/Tablet Front-End Developer: When the word "Mobile" or "Tablet" is included in the job title, this will denote that the developer has experience developing front-ends that run on mobile or tablet devices (either natively or on the web platform, i.e., in a browser).
+            
+            Front-End SEO Expert: When the word "SEO" is included in the job title, this will denote that the developer has extensive experience crafting front-end technologies towards an SEO strategy.
+            
+            Front-End Accessibility Expert: When the word "Accessibility" is included in the job title, this will denote that the developer has extensive experience crafting front-end technologies that support accessibility requirements and standards.
+            
+            Front-End Dev. Ops: When the word "DevOps" is included in the job title, this will denote that the developer has extensive experience with software development practices pertaining to collaboration, integration, deployment, automation, and quality.
+            
+            Front-End Testing/QA: When the word "Testing" or "QA" is included in the job title, this will denote that the developer has extensive experience testing and managing software that involves unit testing, functional testing, user testing, and A/B testing.
+            
+            Notes:
+            
+            If you come across the "Full Stack" or the generic "Web Developer" terms in job titles these words may be used by an employer to describe a role that is responsible for all aspects of web/app development, i.e., both front-end (potentially including design) and back-end.
+            2.3 - Baseline Web Technologies Employed by Front-End Developers
+            
+            
+            The following core web technologies are employed by front-end developers (consider learning them in this order):
+            
+            Hyper Text Markup Language (aka HTML)
+            Cascading Style Sheets (aka CSS)
+            Uniform Resource Locators (aka URLs)
+            Hypertext Transfer Protocol (aka HTTP)
+            JavaScript Programming Language (aka ECMAScript 262)
+            JavaScript Object Notation (aka JSON)
+            Document Object Model (aka DOM)
+            Web APIs (aka HTML5 and friends or Browser APIs)
+            Web Content Accessibility Guidelines (aka WCAG) & Accessible Rich Internet Applications (aka ARIA)
+            For a comprehensive list of all web related specifications have a look at platform.html5.org or MDN Web APIs.
+            
+            The nine technologies just mentioned are defined below along with a link to the relevant documentation and specification for each technology.
+            
+            Hyper Text Markup Language (aka HTML)
+            HyperText Markup Language, commonly referred to as HTML, is the standard markup language used to create web pages. Web browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a website semantically along with cues for presentation, making it a markup language, rather than a programming language.
+            
+            — Wikipedia
+            
+            Most relevant specifications / documentation:
+            
+            All W3C HTML Spec
+            The elements of HTML from the Living Standard
+            Global attributes
+            HTML 5.2 from W3C
+            HTML 5.3 from W3C
+            HTML attribute reference
+            HTML element reference
+            The HTML Syntax from the Living Standard
+            Cascading Style Sheets (aka CSS)
+            Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+            
+            — Wikipedia
+            
+            Most relevant specifications / documentation:
+            
+            All W3C CSS Specifications
+            Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
+            CSS reference
+            Selectors Level 3
+            Hypertext Transfer Protocol (aka HTTP)
+            The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web.
+            
+            — Wikipedia
+            
+            Most relevant specifications:
+            
+            Hypertext Transfer Protocol -- HTTP/1.1
+            HTTP/2
+            Uniform Resource Locators (aka URL)
+            A uniform resource locator (URL) (also called a web address) is a reference to a resource that specifies the location of the resource on a computer network and a mechanism for retrieving it. A URL is a specific type of uniform resource identifier (URI), although many people use the two terms interchangeably. A URL implies the means to access an indicated resource, which is not true of every URI. URLs occur most commonly to reference web pages (http), but are also used for file transfer (ftp), email (mailto), database access (JDBC), and many other applications.
+            
+            — Wikipedia
+            
+            Most relevant specifications:
+            
+            Uniform Resource Locators (URL)
+            URL Living Standard
+            Document Object Model (aka DOM)
+            The Document Object Model (DOM) is a cross-platform and language-independent convention for representing and interacting with objects in HTML, XHTML, and XML documents. The nodes of every document are organized in a tree structure, called the DOM tree. Objects in the DOM tree may be addressed and manipulated by using methods on the objects. The public interface of a DOM is specified in its application programming interface (API).
+            
+            — Wikipedia
+            
+            Most relevant specifications / documentation:
+            
+            DOM Living Standard
+            W3C DOM4
+            UI Events
+            JavaScript Programming Language (aka ECMAScript 262)
+            JavaScript is a high level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production; the majority of websites employ it and it is supported by all modern web browsers without plug-ins. JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles. It has an API for working with text, arrays, dates and regular expressions, but does not include any I/O, such as networking, storage or graphics facilities, relying for these upon the host environment in which it is embedded.
+            
+            — Wikipedia
+            
+            Most relevant specifications / documentation:
+            
+            ECMAScript® 2018 Language Specification
+            All ECMAScript Language Specifications
+            Web APIs (aka HTML5 and friends)
+            When writing code for the Web using JavaScript, there are a great many APIs available. Below is a list of all the interfaces (that is, types of objects) that you may be able to use while developing your Web app or site.
+            
+            — Mozilla
+            
+            Most relevant documentation:
+            
+            Web API Interfaces
+            JavaScript Object Notation (aka JSON)
+            It is the primary data format used for asynchronous browser/server communication (AJAJ), largely replacing XML (used by AJAX). Although originally derived from the JavaScript scripting language, JSON is a language-independent data format. Code for parsing and generating JSON data is readily available in many programming languages. The JSON format was originally specified by Douglas Crockford. It is currently described by two competing standards, RFC 7159 and ECMA-404. The ECMA standard is minimal, describing only the allowed grammar syntax, whereas the RFC also provides some semantic and security considerations. The official Internet media type for JSON is application/json. The JSON filename extension is .json.
+            
+            — Wikipedia
+            
+            Most relevant specifications:
+            
+            Introducing JSON
+            JSON API
+            The JSON Data Interchange Format
+            Web Content Accessibility Guidelines (aka WCAG) & Accessible Rich Internet Applications (aka ARIA)
+            Accessibility refers to the design of products, devices, services, or environments for people with disabilities. The concept of accessible design ensures both “direct access” (i.e., unassisted) and "indirect access" meaning compatibility with a person's assistive technology (for example, computer screen readers).
+            
+            — Wikipedia
+            
+            Web Accessibility Initiative (WAI)
+            Web Content Accessibility Guidelines (WCAG) Current Status
+            2.4 - Potential Front-end Developer Skills
+            
+            
+            Image source: http://blog.naustud.io/2015/06/baseline-for-modern-front-end-developers.html
+            
+            A basic to advanced understanding of HTML, CSS, DOM, JavaScript, HTTP/URL, and web browsers is assumed for any type of professional front-end developer role.
+            
+            Beyond the skills just mentioned, a front-end developer might also be specifically skilled in one or more of the following:
+            
+            Content Management Systems (aka CMS)
+            Node.js
+            Cross-Browser Testing
+            Cross-Platform Testing
+            Unit Testing
+            Cross-Device Testing
+            Accessibility / WAI-ARIA
+            Search Engine Optimization (aka SEO)
+            Interaction or User Interface Design
+            User Experience
+            Usability
+            E-commerce Systems
+            Portal Systems
+            Wireframing
+            CSS Layout / Grids
+            DOM Manipulation (e.g., jQuery)
+            Mobile Web Performance
+            Load Testing
+            Performance Testing
+            Progressive Enhancement / Graceful Degradation
+            Version Control (e.g., GIT)
+            MVC / MVVM / MV*
+            Functional Programming
+            Data Formats (e.g., JSON, XML)
+            Data APIs (e.g Restful API)
+            Web Font Embedding
+            Scalable Vector Graphics (aka SVG)
+            Regular Expressions
+            Microdata / Microformats
+            Task Runners, Build Tools, Process Automation Tools
+            Responsive Web Design
+            Object-Oriented Programming
+            Application Architecture
+            Modules
+            Dependency Managers
+            Package Managers
+            JavaScript Animation
+            CSS Animation
+            Charts / Graphs
+            UI Widgets
+            Code Quality Testing
+            Code Coverage Testing
+            Code Complexity Analysis
+            Integration Testing
+            Command Line / CLI
+            Templating Strategies
+            Templating Engines
+            Single Page Applications
+            Web/Browser Security
+            Browser Developer Tools
+            2.5 - Front-End Developers Develop For...
+            A front-end developer crafts HTML, CSS, and JS that typically runs on the web platform (e.g. a web browser) delivered from one of the following operating systems (aka OSs):
+            
+            Android
+            Chromium
+            iOS
+            OS X (i.e. MacOS)
+            Ubuntu (or some flavor of Linux)
+            Windows
+            These operating systems typically run on one or more of the following devices:
+            
+            Desktop computer
+            Laptop / netbook computer
+            Mobile phone
+            Tablet
+            TV
+            Watch
+            Things (i.e., anything you can imagine, car, refrigerator, lights, thermostat, etc.)
+            
+            
+            Image source: https://www.enterpriseirregulars.com/104084/roundup-internet-things-forecasts-market-estimates-2015/
+            
+            Generally speaking, front-end technologies can run on the aforementioned operating systems and devices using the following run time web platform scenarios:
+            
+            A web browser (examples: Chrome, IE, Safari, Firefox).
+            A headless browser (examples: Headless Chromium).
+            A WebView/browser tab (think iframe) embedded within a native application as a runtime with a bridge to native APIs. WebView applications typically contain a UI constructed from web technologies. (i.e., HTML, CSS, and JS). (examples: Apache Cordova, NW.js, Electron)
+            A native application built from web tech that is interpreted at runtime with a bridge to native APIs. The UI will make use of native UI parts (e.g., iOS native controls) not web technologies. (examples: NativeScript, React Native)
+            2.6 - Front-End on a Team
+            A front-end developer is typically only one player on a team that designs and develops web sites, web applications, or native applications running from web technologies.
+            
+            A bare-bones development team for building professional web sites or software for the web platform will typically, minimally, contain the following roles.
+            
+            Visual Designer (i.e., fonts, colors, spacing, emotion, visuals concepts & themes)
+            UI/Interaction Designer/Information Architect (i.e., wireframes, specifying all user interactions and UI functionality, structuring information)
+            Front-End Developer (i.e., writes code that runs in client/on the device)
+            Back-End Developer (i.e., writes code that runs on the server)
+            The roles are ordered according to overlapping skills. A front-end developer will typically have a good handle on UI/Interaction design as well as back-end development. It is not uncommon for team members to fill more than one role by taking on the responsibilities of an over-lapping role.
+            
+            It is assumed that the team mentioned above is being directed by a project lead or some kind of product owner (i.e., stakeholder, project manager, project lead, etc.)
+            
+            A larger web team might include the following roles not shown above:
+            
+            SEO Strategists
+            DevOps Engineers
+            Performance Engineers
+            API Developers
+            Database Administrators
+            QA Engineers / Testers
+            2.7 - Generalist/Full-Stack Myth
+            Full Stack Developer
+            
+            The term "Full-Stack" developer has come to take on several meanings. So many, that not one meaning is clear when the term is used. Just consider the results from the two surveys shown below. These results might lead one to believe that being a full-stack developer is commonplace. But, in my almost 20 years of experience, this is anything but the case in a professional context.
+            
+            
+            
+            Image source: https://medium.freecodecamp.com/we-asked-15-000-people-who-they-are-and-how-theyre-learning-to-code-4104e29b2781#.ngcpn8nlz
+            
+            
+            
+            Image source: https://insights.stackoverflow.com/survey/2017#developer-profile-specific-developer-types
+            
+            The roles to design and develop a website or web application require a deep set of skills and vast experience in the area of visual design, UI/interaction design, front-end development, and back-end development. Any person who can fill one or more of these 4 roles at a professional level is an extremely rare commodity.
+            
+            Pragmatically, you should seek to be, or seek to hire, an expert in one of these roles (i.e. Visual Design, Interaction Design/IA, Front-end Dev, Back-end Dev). Those who claim to operate at an expert level at one or more of these roles are exceptionally rare.
+            
+            However, given that JavaScript has infiltrated all layers of a technology stack (i.e. Node.js) finding a full-stack JS developer who can code the front-end and back-end is becoming less mythical. Typically, these full-stack developers only deal with JavaScript. A developer who can code the front-end, back-end, API, and database isn't as absurd as it once was (excluding visual design, interaction design, and CSS). Still mythical in my opinion, but not as uncommon as it once was. Thus, I wouldn't recommend a developer set out to become a "full-stack" developer. In rare situations, it can work. But, as a general concept for building a career as a front-end developer, I'd focus on front-end technologies.
+            
+            2.8 - Front-End Interviews
+            Preparing:
+            Preparing for a Front-End Web Development Interview in 2017
+            Cracking the front-end interview
+            Front End Interview Handbook
+            Decoding the Front-end Interview Process
+            Quiz's:
+            Front End Web Development Quiz
+            JavaScript Web Quiz
+            Questions you may get asked:
+            10 Interview Questions Every JavaScript Developer Should Know
+            Front-End Job Interview Questions
+            Front End Web Development Quiz
+            Interview Questions for Front-End-Developer
+            The Best Frontend JavaScript Interview Questions (written by a Frontend Engineer))
+            Questions you ask:
+            An open source list of developer questions to ask prospective employers</p>
+    </section>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>
